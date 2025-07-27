@@ -1,10 +1,14 @@
+// manifest.json
 {
   "manifest_version": 3,
-  "name": "Auto Link Opener",
+  "name": "Mobile Link Receiver",
   "version": "1.0",
-  "description": "Automatically opens links received from backend.",
-  "permissions": ["tabs", "alarms"],
+  "description": "Receives links from mobile and opens in Chrome",
+  "permissions": ["storage", "tabs", "scripting"],
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
   }
 }
