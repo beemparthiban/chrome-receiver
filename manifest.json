@@ -4,10 +4,13 @@
   "version": "1.0",
   "description": "Receives links from mobile and opens in Chrome",
   "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": [
+    "https://pusher-3vdj.onrender.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+ 
   }
 }
